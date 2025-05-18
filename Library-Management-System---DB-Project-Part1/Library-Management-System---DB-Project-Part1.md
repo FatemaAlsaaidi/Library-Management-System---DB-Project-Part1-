@@ -8,5 +8,5 @@ The Library Management System is designed to manage books, members, staff, loans
 ## Database Schema (Map the ERD to Relational Schema)
 ![Mapping](../images/Mapping.png)
 ## Normalization
-
+![Normalization](../images/Normlization.png)
 ## SQL Queries
