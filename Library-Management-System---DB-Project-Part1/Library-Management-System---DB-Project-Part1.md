@@ -465,7 +465,23 @@ INSERT INTO MemberBookReviews (book_id, member_id, review_number) VALUES
 
 ### Try updating a foreign key field (like MemberID in Loan) to a value that doesn’t exist.
 ```
-
+select * from loan
+UPDATE loan 
+SET member_id = 8
 
 ``` 
+error
+```
+The UPDATE statement conflicted with the FOREIGN KEY constraint "FK__loan__member_id__6EF57B66". The conflict occurred in database "LibrarySystem", table "dbo.member", column 'member_id'.
+
+
+```
+
+solve
+make sure that the value of member_id is exist _
+```
+select * from loan
+UPDATE loan 
+SET member_id = 5
+```
 
